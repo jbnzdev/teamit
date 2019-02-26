@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vue-material/1.0.0/vue-material.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="app">
+
+  {{ msg }}  
+  
+  <input v-model="username">
+  <input v-model="password">
+  <button v-on:click = "loginSubmit">Login</button>
+  
+     <div class="col-sm-12">
+        <pre>{{ $data | json }}</pre>
+      </div>
+  
+</div>
+<script src="https://unpkg.com/vue@2.5.8/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.17.1/dist/axios.min.js"></script>
+<script src="/login.js"></script>
+</body>
+</html>
