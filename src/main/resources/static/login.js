@@ -2,8 +2,8 @@ new Vue({
   el: '#app',
   data: {
     msg:'Login to  the app',
-    username:'username',
-    password:'password'
+    username:'',
+    password:''
   },
   methods:{
 	  loginSubmit: function(){
