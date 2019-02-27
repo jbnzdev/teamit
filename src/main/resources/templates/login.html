@@ -37,6 +37,12 @@
 						Login
 					</span>
 				<div id="app">
+				<div class="text-center p-t-8 p-b-31">
+						<span style="color:red;">
+							{{error}}
+						</span>
+					</div>
+				
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
 						<span class="label-input100">Username</span>
 						<input v-model="username" class="input100" type="text" name="username" placeholder="Type your username">
