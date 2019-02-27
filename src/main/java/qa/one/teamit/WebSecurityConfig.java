@@ -41,10 +41,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 			.permitAll()
 			.anyRequest().authenticated()
 			.and()
-//		.formLogin()  // This part is commented out or else the page will be navigated to login page if not authenticated
-//			.loginPage("/login")
-//			.permitAll()
-//			.and()
+		.formLogin()  // This part is commented out or else the page will be navigated to login page if not authenticated
+			.loginPage("/login")
+			.permitAll()
+			.and()
 		.logout()
 		.permitAll();
 	}
